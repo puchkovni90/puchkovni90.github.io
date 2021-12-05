@@ -237,6 +237,7 @@ nav{
 .cost_calc_result div{
 	border: 1px solid;
 	margin: 5px;
+	width: 100%;
 }
 .cost_calc_result>div{
 	display: table-row;
@@ -247,4 +248,5 @@ nav{
 }
 .cost_calc_result .rightcell{
 	display: table-cell;
+	text-align: right;
 }
