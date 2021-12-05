@@ -1,0 +1,250 @@
+/*
+ * Общие
+*/
+body{
+    font-family: "Franklin Gothic Medium", Arial, sans-serif;
+}
+/*
+.main input{
+    height: 38px;
+    border: 2px solid #697784;
+    border-radius: 5px;
+    padding: 0 14px 0 14px;
+    margin: 30px 13px;
+    color: #697784;
+    font-size: 12px;
+    text-align: center;
+    background: none;
+}
+*/
+input[type="button"]{
+    height: 38px;
+    border: 2px solid #697784;
+    border-radius: 5px;
+    padding: 0 14px 0 14px;
+    margin: 30px 13px;
+    color: #697784;
+    font-size: 12px;
+    text-align: center;
+    background: none;
+}
+.block-header{
+/*    margin: 105px auto 0 auto;*/
+    padding-top: 105px;
+    text-align: center;
+	text-transform: uppercase;
+    font-size: 23px;
+    color: #1a2e43;
+}
+.block-header-underline{
+    margin: 30px auto;
+    
+    width: 70px;
+    height: 4px;
+    background-color: #eb7800;
+}
+
+/*
+ * Разделы
+*/
+/*Меню*/
+nav{
+    width: 100%;
+/*    height: 60px;*/
+    background-color: #2a3e51;
+    
+    overflow: hidden;
+}
+.logo{
+    color: #fff;
+    font-size: 23px;
+    line-height: 60px;
+    padding-left: 20%;
+    font-weight: bold;
+    float: left;
+}
+.menu{
+    float: left; /*Если делать float - пункт меню Контакты сьезжает на строку ниже, если убрать float - перестает работать Margin*/
+    padding-left: 23%;
+/*    width: 100%;*/
+}
+.menu>ul>li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 2% 0 2%;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/*Главный экран*/
+.main{
+    height: calc(100% - 60px);
+    width: 100%;
+    background: url(../img/image_main_guy.png) 90% 100%/auto 85% no-repeat , url(../img/image_main_background.jpg) center/cover no-repeat;
+}
+.title_container{
+    float: left;
+    margin: 22% 0 0 21%;
+    text-align: center;
+}
+.title_container h1{
+    color: #223549;
+    font-size: 52px;
+}
+.title_container h4{
+    color: #76828e;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+/*Обо мне*/
+.about{
+/*    float: left;*/
+    min-height: 50%;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -22px 30px #cacdd5;
+}
+.about_avatar{
+    margin: 30px auto;
+    
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+    background: url(../img/image_about_avatar.png) center/cover no-repeat;
+}
+
+.about_description{
+    margin: 0 auto;
+    width: 73%;
+}
+.about_description p{
+    font-family: Calibri, "Franklin Gothic Medium", Arial, sans-serif;
+    font-size: 11px;
+    margin-top: 20px;
+    text-align: justify;
+    color: #38475a;
+}
+#about_download_cv{
+    height: 25px;
+    padding: 0 14px 0 35px;
+    background: url(../img/ico_about_download.png) 10px/auto 12px no-repeat;
+    color: #6f7180;
+}
+
+/*Что я умею*/
+.skills{
+	background: url(../img/image_skills_background.jpg) center/cover no-repeat;
+	min-height: 50%;
+	overflow: hidden; /*вообще я не предполагал здесь переполнения*/
+	padding: 0 20% 0 20%;
+}
+.skill{
+	/*здесь с выравниванием было что-то невообразимое, мне кажется я сделал неправильно и можно было сильно проще и надежнее*/
+	float: left;
+	text-align: center;
+	margin: 108px calc((25% - 200px) / 2) 95px calc((25% - 200px) / 2);
+	height: 200px;
+	width: 200px;
+}
+.skill_header{
+	font-size: 18px;
+	color: #e87600;
+	margin: 35px 0 15px 0;
+}
+
+/*Кейсы*/
+.cases{
+	margin: auto;
+	width: 61%;
+	
+	color: #2f4154;
+}
+.cases_description{
+	text-align: center;
+	font-family: Calibri, "Franklin Gothic Medium", Arial, sans-serif;
+	font-size: 12px;
+	color: #38475a;
+}
+.cases_slider{
+	margin: 40px 0;
+	font-size: 20px;
+	font-weight: normal;
+	color: #38475a;
+	font-family: Calibri, "Franklin Gothic Medium", Arial, sans-serif;
+}
+.cases_slider h3{
+	margin: 18px 0 12px 0;
+	text-transform: uppercase;
+	font-family: "Franklin Gothic Medium", Arial, sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+}
+.case_slider_description_container{
+	display: table-row;
+}
+.case_slider_description_container>div{
+	display: table-cell;
+	padding-right: 20px;
+}
+#case_slider_client_website_button{
+	background-color: #00b6af;
+	color: white;
+	font: inherit;
+	min-width: 200px;
+	margin: 30px 0;
+}
+
+/*Расчет стоимости*/
+.cost{
+	min-height: 50%;
+	margin: 0 auto;
+	width: 50%;
+}
+.cost .block-header{
+	font-size: 52px;
+}
+.cost .block-header-underline{
+	display: none;
+}
+.cost_form{
+}
+.cost_form h3{
+	margin: 30px 0 13px 0;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.cost_form select{
+	height: 60px;
+	width: 100%;
+	background-color: #efefef;
+	border-radius: 1px;
+	
+}
+.cost hr{
+	width: 100%;
+	height: 2px;
+	background-color: #d2d2d2;
+	margin: 37px 0 23px 0;
+}
+.cost_calc_result{
+	width: 100%;
+}
+/*ОТЛАДКА*/
+.cost_calc_result div{
+	border: 1px solid;
+	margin: 5px;
+}
+.cost_calc_result>div{
+	display: table-row;
+	width: 100%;
+}
+.cost_calc_result .leftcell{
+	display: table-cell;
+}
+.cost_calc_result .rightcell{
+	display: table-cell;
+}
